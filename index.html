@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mozaik</title>
+    <meta name="description" content="mozaik、アーティスト">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Geologica:wght@100..900&family=Indie+Flower&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+3D&family=Shizuru&family=Tsukimi+Rounded&family=Yomogi&family=Zen+Maru+Gothic:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#report">LIVE REPORT</a></li>
+                    <li><a href="#live">LIVE</a></li>
+                    <li><a href="#ticket">TICKET</a></li>
+                    <li><a href="#event">SPECIAL</a></li>
+                    <li><a href="#sns">SNS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="wrapper">
+        <div class="pc-content pc_left">
+            <p class="right-title">あなた方から見て左側<br>
+            <span class="title">らんしろう</span></p>
+            <img src="./img/pc_left.jpg" alt="">
+        </div>
+
+        <div class="pc-content pc_right">
+            <p class="left-title">あなた方から見て右側<br>
+            <span class="title">Wonder</span></p>
+            <img src="./img/pc_right.jpg" alt="">
+        </div>
+
+        <div class="scroll-content">
+            <h1>MOZAIK</h1>
+            <div class="mainimg">
+                <img src="./img/main.jpg" alt="">
+            </div>
+            <div class="concept">
+                <h2>Concept</h2>
+                <div class="concept_text wrap">
+                    <p>MOZAIKは、2025年5月に結成された<br>
+                        2人組シティーポップユニット。</p>
+                        <p>それぞれの感性を重ね合わせ、<br>
+                        新たな音の光を生み出す。</p>
+                        <p>日常のざらつきや、</p>
+                        <p>夜のざわめきを抱きしめながら、</p>
+                        <p>そのすべてを“笑顔に変えて”</p>
+                        <p>音を紡いでいく。</p>
+                        <p>トークは誰もが笑顔になる<br>
+                        やわらかく、クールで、少し異質。</p>
+                        <p>そんなMOZAIKの音は、</p>
+                        <p>今日も誰かの心を動かしている。</p>
+                </div>
+            </div>
+
+            <section id="profile" class="profile">
+                <h2>Profile</h2>
+                <div class="profile-unit">
+                    <div class="profile-photos-left">
+                        <img src="img/profile_1.jpg" class="fade-up" alt="らんしろう">
+                        <p>1996.11.16生まれ<br>
+                        秋田県出身／料理人</p>
+                        <img src="img/profile_2.jpg" class="fade-up" alt="らんしろう">
+                    </div>
+                    <div class="profile-photos-right">
+                        <h3>らんしろう</h3>
+                        <img src="img/profile_3.jpg" class="fade-up" alt="らんしろう">
+                        <p>デザイン担当<br>
+                            料理人</p>
+                    </div>
+                </div>
+                <div class="sns-icons">
+                    <a href="https://www.instagram.com/ranshiro_official/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_insta.jpg" alt="Instagram">
+                    </a>
+                      
+                    <a href="https://x.com/ranshiro530" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_x.jpg" alt="X">
+                    </a>
+
+                    <a href="https://www.youtube.com/@jj_ranshro_jj" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_youtube.jpg" alt="YouTube">
+                    </a>
+
+                    <a href="https://www.tiktok.com/@ranshiro_mozaik" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_tictok.jpg" alt="TikTok">
+                    </a>
+                </div>
+                <div class="profile-unit">
+                    <div class="profile-photos-right">
+                        <h3>Wonder</h3>
+                        <img src="img/profile_4.jpg" class="fade-up" alt="Wonder">
+                        <p>作詞作曲担当<br>
+                        看護師</p>
+                    </div>
+                    <div class="profile-photos-left">
+                        <img src="img/profile_5.jpg" class="fade-up" alt="Wonder">
+                        <p>1997.3.13生まれ<br>
+                            北海道出身／看護師</p>
+                        <img src="img/profile_6.jpg" class="fade-up" alt="Wonder">
+                    </div>
+                </div>
+                <div class="sns-icons">
+                    <a href="https://www.instagram.com/wonder_desu/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_insta.jpg" alt="Instagram">
+                    </a>
+                      
+                    <a href="https://x.com/Wonder_desu" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_x.jpg" alt="X">
+                    </a>
+
+                    <a href="https://www.youtube.com/@Wonder_desu" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_youtube.jpg" alt="YouTube">
+                    </a>
+
+                    <a href="https://www.tiktok.com/@wonder_desu" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_tictok.jpg" alt="TikTok">
+                    </a>
+                  </div>
+            </section>
+
+            <section id="report" class="report">
+                <h2>LIVE REPORT</h2>
+            
+                <div class="report__list">
+                    <a href="#" class="report__item">
+                        <img src="./img/live_1.jpg" alt="">
+                        <p class="report__date">2025.10.18</p>
+                        <p class="report__venue">神戸 C-Lump & UP</p>
+                    </a>
+            
+                    <a href="#" class="report__item">
+                        <img src="./img/live_2.jpg" alt="">
+                        <p class="report__date">2025.10.10</p>
+                        <p class="report__venue">新宿ROTT</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="live" class="live">
+                <h2>LIVE Schedule</h2>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <h3>2025年6月</h3>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="day">月</div><div class="day">火</div><div class="day">水</div>
+                        <div class="day">木</div><div class="day">金</div><div class="day">土</div><div class="day">日</div>
+
+                        <div></div><div></div><div></div><div></div><div></div><div class="date">1</div><div class="date live-day">2<span>らんしろう 配信</span></div>
+
+                        <div class="date live-day">3<span>郡山<br>FREE LIVE</span></div><div class="date live-day">4<span>MOZAIK RADIO</span></div><div class="date">5<br></div>
+                        <div class="date live-day">6<span>online<br>チェキ</span></div><div class="date">7</div><div class="date">8</div><div class="date live-day">9<span>南古谷 LIVE</span></div>
+
+                        <div class="date">10</div><div class="date">11</div><div class="date">12</div>
+                        <div class="date live-day">13<span>online<br>チェキ</span></div><div class="date live-day">14<span>Wonder<br>配信</span></div><div class="date live-day">15<span>水戸南 LIVE</span></div><div class="date">16</div>
+
+                        <div class="date">17</div><div class="date live-day">18<span>らんしろう<br>誕生祭</span></div><div class="date">19</div><div class="date">20</div>
+                        <div class="date">21</div><div class="date live-day">22<span>日野<br>FREE LIVE</span></div><div class="date live-day">23<span>和歌山<br>FREE LIVE</span></div>
+
+                        <div class="date">24</div><div class="date">25</div><div class="date">26</div>
+                        <div class="date">27</div><div class="date live-day">28<span>online<br>チェキ</span></div><div class="date">29</div><div class="date live-day">30<span>錦糸町<br>FREE LIVE</span></div>
+                    </div>
+                </div>
+
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <h3>2026年7月</h3>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="day">月</div>
+                        <div class="day">火</div>
+                        <div class="day">水</div>
+                        <div class="day">木</div>
+                        <div class="day">金</div>
+                        <div class="day">土</div>
+                        <div class="day">日</div>
+
+                        <div class="date">1</div>
+                        <div class="date live-day" data-title="MOZAIK RADIO" data-detail="＠FMサルース、たまプラーザスタジオ">2<span>MOZAIK<br>RADIO</span></div>
+                        <div class="date">3</div>
+                    
+                        <div class="date live-day">4<span>online<br>チェキ</span></div>
+                        <div class="date" data-title="" data-detail="福島県郡山市松木町2-88">5</div>
+                        <div class="date live-day" data-title="" data-detail="">6<span>郡山<br>FREE LIVE</span></div>
+                        <div class="date live-day" data-title="MOZAIK Cafe Live in Fukushima" data-detail="会場：shisha Cafe & Bar 「e.n」
+                        （福島県郡山市清水台1-8-16）
+                        OPEN 11:30／LIVE 11:45-12:30">7<span>MOZAIK<br>Cafe LIVE</span></div>
+                        <div class="date">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                    
+                        <div class="date live-day" data-title="" data-detail="">11<span>online<br>チェキ</span></div>
+                        <div class="date">12</div>
+                        <div class="date live-day" data-title="" data-detail="">13<span>南古谷<br>FREE LIVE</span></div>
+                        <div class="date live-day" data-title="" data-detail="">14<span>MOZAIK<br>哲誠<br>2MAN LIVE</span></div>
+                        <div class="date">15</div>
+                        <div class="date live-day" data-title="" data-detail="">16<span>エアプレイフェス</span></div>
+                        <div class="date live-day" data-title="" data-detail="">17<span>Wonder<br>ソロ配信</span></div>
+                    
+                        <div class="date live-day" data-title="" data-detail="">18<span>online<br>チェキ</span></div>
+                        <div class="date">19</div>
+                        <div class="date live-day" data-title="" data-detail="">20<span>水戸南<br>FREE LIVE</span></div>
+                        <div class="date live-day" data-title="" data-detail="">21<span>吉川美南<br>FREE LIVE</span></div>
+                        <div class="date">22</div>
+                        <div class="date live-day" data-title="" data-detail="">23<span>らんしろう<br>配信</span></div>
+                        <div class="date">24</div><div class="date">25</div>
+                    
+                        <div class="date">26</div>
+                        <div class="date live-day" data-title="" data-detail="">27<span>秩父<br>FREE LIVE</span></div>
+                        <div class="date live-day" data-title="" data-detail="">28<span>南古谷<br>FREE LIVE</span></div><div class="date">29</div>
+                        <div class="date">30</div>
+                        <div class="date">31</div>
+                    </div>
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h3 id="modal-title"></h3>
+                      <p id="modal-detail"></p>
+                    </div>
+                  </div>                  
+            </section>
+
+            <section id="ticket" class="ticket">
+                <h2>LIVE Ticket</h2>
+                <div class="live__list">
+                    <div class="ticket__item">
+                        <div class="ticket__text">
+                            <p class="ticket__date">11/18(火)</p>
+                            <p class="ticket__name">
+                                MOZAIK らんしろう<br>
+                                29th Birthday LIVE
+                            </p>
+                            <a href="https://premier.twitcasting.tv/mozaik_moza_/shopcart/398420" target="_blank" rel="noopener noreferrer" class="ticket__btn">購入する</a>
+                        </div>
+                    </div>
+                    <div class="ticket__item">
+                        <div class="ticket__text">
+                            <p class="ticket__date">11/18(火)</p>
+                            <p class="ticket__name">
+                                MOZAIK らんしろう<br>
+                                29th Birthday LIVE
+                            </p>
+                            <a href="https://premier.twitcasting.tv/mozaik_moza_/shopcart/398420" target="_blank" rel="noopener noreferrer" class="ticket__btn">購入する</a>
+                        </div>
+                    </div>
+                    <div class="ticket__item">
+                        <div class="ticket__text">
+                            <p class="ticket__date">11/18(火)</p>
+                            <p class="ticket__name">
+                                MOZAIK らんしろう<br>
+                                29th Birthday LIVE
+                            </p>
+                            <a href="https://premier.twitcasting.tv/mozaik_moza_/shopcart/398420" target="_blank" rel="noopener noreferrer" class="ticket__btn">購入する</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="event" class="event">
+                <h2 class="event__title">SPECIAL</h2>
+                    <div class="event__list">
+                    <ul>
+                        <li><a href="https://odt2vgs6msufw8knwuno.stores.jp/" target="_blank" rel="noopener noreferrer">
+                            <div class="event__img">
+                                <img src="img/event_1.jpg" alt="グッズ">
+                            </div>
+                            <p>GOODS</p>
+                            </a>
+                        </li>
+                        <li><a href="https://odt2vgs6msufw8knwuno.stores.jp/" target="_blank" rel="noopener noreferrer">
+                            <div class="event__img">
+                                <img src="img/event_3.jpg" alt="ラジオ">
+                            </div>
+                            <p>Radio</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="event__img">
+                                <img src="img/pc_right1.jpg" alt="Wonderソロ配信">
+                            </div>
+                            <a href="https://premier.twitcasting.tv/mozaik_moza_/shopcart/405210" target="_blank" rel="noopener noreferrer" class="ticket__btn">Wonder 配信</a>
+                        </li>
+                        <li>
+                            <div class="event__img">
+                                <img src="img/pc_left1.jpg" alt="らんしろうソロ配信">
+                            </div>
+                            <a href="https://premier.twitcasting.tv/mozaik_moza_/shopcart/403397" target="_blank" rel="noopener noreferrer" class="ticket__btn">らんしろう配信</a>
+                        </li>
+                    </ul>
+                    </div>
+            </section>
+
+            <section id="sns" class="sns">
+                <h2>sns</h2>
+                <img class="sns__img" src="./img/footer.jpg" alt="">
+                <div class="sns-icons">
+                    <a href="https://www.instagram.com/mozaik_moza_/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_insta.jpg" alt="Instagram">
+                    </a>
+                      
+                    <a href="https://x.com/mozaik_moza_" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_x.jpg" alt="X">
+                    </a>
+
+                    <a href="https://www.youtube.com/@mozaik_ch" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_youtube.jpg" alt="YouTube">
+                    </a>
+
+                    <a href="https://www.tiktok.com/@mozaik_moza_" target="_blank" rel="noopener noreferrer">
+                        <img src="img/sns_tictok.jpg" alt="TikTok">
+                    </a>
+                  </div>
+            </section>
+
+            <footer>
+                <p>株式会社エアプレイ</p>
+                <a href="mailto:airplaystaff@apy.jp">問い合わせ</a>
+                <a href="https://line.me/R/ti/p/@036mxczz?ts=08191848&oat_content=url" target="_blank" rel="noopener noreferrer">公式LINE</a>
+            </footer>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
