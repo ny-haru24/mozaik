@@ -11,6 +11,10 @@ body {
     font-style: normal;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* header */
 
 /* ハンバーガー */
