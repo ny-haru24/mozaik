@@ -1,13 +1,25 @@
 // ハンバーガーメニュー
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav");
+const body = document.body;
 
 if (hamburger && nav) {
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active");
         nav.classList.toggle("active");
+        body.classList.toggle("no-scroll");
     });
 }
+
+const navLinks = document.querySelectorAll("#nav a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        nav.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+    });
+});
 
 // DOM Ready
 document.addEventListener("DOMContentLoaded", () => {
@@ -21,18 +33,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const leftImages = [
             "img/pc_left.jpg",
-            "img/left_2.jpg",
-            "img/left_3.jpg",
-            "img/left_4.jpg",
-            "img/left_5.jpg"
+            "img/pc_left2.jpg",
+            "img/pc_left3.jpg",
+            "img/pc_left4.jpg",
+            "img/pc_left5.jpg"
         ];
 
         const rightImages = [
             "img/pc_right.jpg",
-            "img/right_2.jpg",
-            "img/right_3.jpg",
-            "img/right_4.jpg",
-            "img/right_5.jpg"
+            "img/pc_right2.jpg",
+            "img/pc_right3.jpg",
+            "img/pc_right4.jpg",
+            "img/pc_right5.jpg"
         ];
 
         left.style.transition = "opacity 0.8s ease";
