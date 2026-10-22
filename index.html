@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mozaik</title>
-    <meta name="description" content="mozaik、アーティスト">
+    <title>MOZAIK｜Official Website</title>
+    <meta name="description" content="MOZAIK Official Website。2人組シティーポップユニット MOZAIKのプロフィール、音楽、LIVE情報、最新ニュース、SNSなどをご紹介します。">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-
-    <!-- slickのCSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Geologica:wght@100..900&family=Indie+Flower&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+3D&family=Shizuru&family=Tsukimi+Rounded&family=Yomogi&family=Zen+Maru+Gothic:wght@400;900&display=swap" rel="stylesheet">
@@ -26,12 +22,13 @@
     
             <nav class="nav" id="nav">
                 <ul>
+                    <li><a href="#about">ABOUT</a></li>
                     <li><a href="#profile">PROFILE</a></li>
-                    <li><a href="#report">LIVE REPORT</a></li>
-                    <li><a href="#live">LIVE</a></li>
+                    <li><a href="#blog">BLOG</a></li>
                     <li><a href="#ticket">TICKET</a></li>
-                    <li><a href="#event">SPECIAL</a></li>
                     <li><a href="#sns">SNS</a></li>
+                    <li><a href="#goods">GOODS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,22 +38,26 @@
         <div class="pc-content pc_left">
             <p class="right-title">あなた方から見て左側<br>
             <span class="title">らんしろう</span></p>
-            <img src="./img/pc_left.jpg" alt="">
+            <img src="./img/ranshirou_01.webp" alt="">
         </div>
 
         <div class="pc-content pc_right">
             <p class="left-title">あなた方から見て右側<br>
             <span class="title">Wonder</span></p>
-            <img src="./img/pc_right.jpg" alt="">
+            <img src="./img/wonder_01.webp" alt="">
         </div>
 
         <div class="scroll-content">
-            <h1>MOZAIK</h1>
+            <h1 class="main-title">
+                <span class="pc-title">MOZAIK</span>
+                <img src="./img/mozaik_logo-Photoroom.png" alt="MOZAIK" class="sp-logo">
+            </h1>
+            
             <div class="mainimg">
-                <img src="./img/main.jpg" alt="">
+                <img src="./img/mozaik_main.webp" alt="">
             </div>
-            <div class="concept">
-                <h2>Concept</h2>
+            <div class="about" id="about">
+                <h2>ABOUT</h2>
                 <div class="concept_text wrap">
                     <p>MOZAIKは、2025年5月に結成された<br>
                         2人組シティーポップユニット。</p>
@@ -77,16 +78,15 @@
                 <h2>Profile</h2>
                 <div class="profile-unit">
                     <div class="profile-photos-left">
-                        <img src="img/profile_1.jpg" class="fade-up" alt="らんしろう">
+                        <img src="./img/profile_ran01.webp" class="fade-up" alt="らんしろう">
                         <p>1996.11.16生まれ<br>
-                        秋田県出身／料理人</p>
-                        <img src="img/profile_2.jpg" class="fade-up" alt="らんしろう">
+                        秋田県出身／元星付き料理人・元パティシエ</p>
+                        <img src="./img/profile_ran02.webp" class="fade-up" alt="らんしろう">
                     </div>
                     <div class="profile-photos-right">
                         <h3>らんしろう</h3>
-                        <img src="img/profile_3.jpg" class="fade-up" alt="らんしろう">
-                        <p>デザイン担当<br>
-                            料理人</p>
+                        <img src="./img/profile_ran03.webp" class="fade-up" alt="らんしろう">
+                        <p>MOZAIKのデザイン担当</p>
                     </div>
                 </div>
                 <div class="sns-icons">
@@ -109,15 +109,14 @@
                 <div class="profile-unit">
                     <div class="profile-photos-right">
                         <h3>Wonder</h3>
-                        <img src="img/profile_4.jpg" class="fade-up" alt="Wonder">
-                        <p>作詞作曲担当<br>
-                        看護師</p>
+                        <img src="./img/profile_won01.webp" class="fade-up" alt="Wonder">
+                        <p>MOZAIKの作詞作曲担当</p>
                     </div>
                     <div class="profile-photos-left">
-                        <img src="img/profile_5.jpg" class="fade-up" alt="Wonder">
+                        <img src="./img/profile_won02.webp" class="fade-up" alt="Wonder">
                         <p>1997.3.13生まれ<br>
-                            北海道出身／看護師</p>
-                        <img src="img/profile_6.jpg" class="fade-up" alt="Wonder">
+                            北海道出身／元ICU•脳神経外科看護師</p>
+                        <img src="./img/profile_won03.webp" class="fade-up" alt="Wonder">
                     </div>
                 </div>
                 <div class="sns-icons">
@@ -139,7 +138,16 @@
                   </div>
             </section>
 
-            <section id="report" class="report">
+            <section id="goods" class="goods">
+                <div class="goods-inner">
+                    <h2>GOODS</h2>
+                    <p>MOZAIK OFFICIAL GOODS</p>
+
+                    <a href="https://odt2vgs6msufw8knwuno.stores.jp/" class="goods-btn" target="_blank" rel="noopener noreferrer">ONLINE STORE</a>
+                </div>
+            </section>
+
+            <!-- <section id="report" class="report">
                 <h2>LIVE REPORT</h2>
             
                 <div class="report__list">
@@ -155,9 +163,9 @@
                         <p class="report__venue">新宿ROTT</p>
                     </a>
                 </div>
-            </section>
+            </section> -->
 
-            <section id="live" class="live">
+            <!-- <section id="live" class="live">
                 <h2>LIVE Schedule</h2>
                 <div class="calendar">
                     <div class="calendar-header">
@@ -223,9 +231,9 @@
                       <p id="modal-detail"></p>
                     </div>
                   </div>                  
-            </section>
+            </section> -->
 
-            <section id="ticket" class="ticket">
+            <!-- <section id="ticket" class="ticket">
                 <h2>LIVE Ticket</h2>
                 <div class="live__list">
                     <div class="ticket__item">
@@ -259,9 +267,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <section id="event" class="event">
+            <!-- <section id="event" class="event">
                 <h2 class="event__title">SPECIAL</h2>
                     <div class="event__list">
                     <ul>
@@ -295,11 +303,11 @@
                         </li>
                     </ul>
                     </div>
-            </section>
+            </section> -->
 
             <section id="sns" class="sns">
-                <h2>sns</h2>
-                <img class="sns__img" src="./img/footer.jpg" alt="">
+                <h2>SNS</h2>
+                <img class="sns__img" src="./img/mozaik_sns.webp" alt="">
                 <div class="sns-icons">
                     <a href="https://www.instagram.com/mozaik_moza_/" target="_blank" rel="noopener noreferrer">
                         <img src="img/sns_insta.jpg" alt="Instagram">
@@ -319,16 +327,28 @@
                   </div>
             </section>
 
-            <footer>
-                <p>株式会社エアプレイ</p>
-                <a href="mailto:airplaystaff@apy.jp">問い合わせ</a>
-                <a href="https://line.me/R/ti/p/@036mxczz?ts=08191848&oat_content=url" target="_blank" rel="noopener noreferrer">公式LINE</a>
+            <footer class="footer" id="contact">
+                <div class="footer-contact">
+                    <h2>CONTACT</h2>
+                    <a href="mailto:airplaystaff@apy.jp" class="footer-btn">お問い合わせはこちら</a>
+                </div>
+
+                <div class="footer-line">
+                    <a href="https://line.me/R/ti/p/@036mxczz?ts=08191848&oat_content=url" target="_blank" rel="noopener noreferrer"class="footer-btn">
+                        OFFICIAL LINE
+                    </a>
+                </div>
+
+                <div class="footer-company">
+                    <p>株式会社エアプレイ</p>
+                </div>
+
+                <div class="footer-copyright">
+                    <small> MOZAIK</small>
+                </div>
             </footer>
         </div>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/slick.js"></script>
+    </section>       
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     line-height: 1.8;
     overflow-x: hidden;
-    font-family: "Yomogi", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -15,33 +14,59 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.right-title, .left-title {
+    font-family: "Yomogi", cursive;
+}
+
 /* header */
+
+header {
+    background-color: #fff;
+}
+
+.header-logo {
+    width: 120px;
+    display: block;
+}
+
+.header-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pc-title {
+    display: block;
+}
+
+.sp-logo {
+    display: none;
+}
 
 /* ハンバーガー */
 .hamburger{
     position: fixed;
     top: 20px;
     right: 20px;
-
     width: 40px;
     height: 40px;
-
     background: transparent;
     border: none;
     cursor: pointer;
-
     z-index: 10000;
+}
+
+.hamburger {
+    display: none;
 }
 
 /* 3本線 */
 .hamburger span{
     position: absolute;
     left: 0;
-
     width: 100%;
     height: 3px;
-
-    background: #fff;
+    background: #000;
     transition: .3s;
 }
 
@@ -76,12 +101,11 @@ body.no-scroll {
 .nav{
     position: fixed;
     top: 0;
-    left: -300px;
-
-    width: 300px;
+    left: -100%;
+    width: 100%;
     height: 100vh;
 
-    background: rgba(0,0,0,.95);
+    background: rgba(0,0,0,0.9);
 
     transition: .4s ease;
 
@@ -188,8 +212,9 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 1.5rem;
-    margin: 50px 0 20px;
+    font-size: 2rem;
+    letter-spacing: 0.15em;
+    margin: 20px 0 20px;
     font-family: "Shizuru", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -209,17 +234,11 @@ h2 {
     transform: translateX(-30px);
     transition: all 0.8s ease;
     font-size: 1rem;
-}  
+}
 
 .concept_text.visible p {
     opacity: 1;
     transform: translateX(0);
-}
-
-/* live */
-
-.live {
-    text-align: center;
 }
 
 /* profile */
@@ -232,7 +251,8 @@ h2 {
 h3 {
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.3rem;
+    font-family: "Yomogi", cursive;
 }
 
 .profile-unit {
@@ -271,12 +291,66 @@ h3 {
     transform: translateY(0);
 }
 
+/* GOODS */
+
+.goods {
+    padding: 20px 40px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.goods-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.goods h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+    letter-spacing: 0.15em;
+}
+
+.goods p {
+    margin-bottom: 40px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.goods-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-width: 240px;
+    padding: 18px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.goods-btn span {
+    transition: 0.3s;
+}
+
+.goods-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.goods-btn:hover span {
+    transform: translateX(6px);
+}
+
 /* report  */
 
-.report {
+/* .report {
     padding: 0 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .report h2 {
@@ -325,63 +399,64 @@ h3 {
     padding: 10px 20px 25px;
     font-size: 1.1rem;
     font-weight: 700;
-}
+} */
 
 /* LIVE */
 
-.live {
+/* .live {
     max-width: 1000px;
     margin: 0 auto;
     box-sizing: border-box;
     text-align: center;
-}
+} */
 
   /* カレンダー全体 */
-.calendar {
+/* .calendar {
     width: 100%;
     max-width: 700px;
     margin: 0 auto 80px;
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
-}
+} */
 
   /* カレンダー見出し */
-.calendar-header h3 {
+
+/* .calendar-header h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
-}
+} */
 
   /* カレンダーのマス配置 */
-.calendar-grid {
+/* .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 4px; /* 少し詰めてはみ出し防止 */
+    gap: 4px;
     text-align: center;
     box-sizing: border-box;
-}
+} */
 
   /* 曜日行 */
-.calendar-grid .day {
+/* .calendar-grid .day {
     font-weight: bold;
     padding: 6px 0;
     border-bottom: 2px solid #333;
-}
+} */
 
   /* 各日付セル */
-.calendar-grid .date {
+/* .calendar-grid .date {
     padding: 10px 0;
     border: 1px solid #333;
     border-radius: 6px;
     font-size: 0.9rem;
     min-height: 60px;
     box-sizing: border-box;
-    word-break: break-word; /* 長い文字の折返し防止 */
-}
+    word-break: break-word;
+} */
 
   /* 特別な日 */
-.live-day {
+/* .live-day {
     background-color: #222;
     color: #ffcc00;
     font-weight: bold;
@@ -412,27 +487,27 @@ h3 {
     justify-content: center;
     align-items: center;
     z-index: 999;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background: #fff;
     padding: 20px 30px;
     border-radius: 10px;
     width: 80%;
     max-width: 400px;
     color: #000;
-  }
-  
-  .close {
+}
+
+.close {
     float: right;
     font-size: 24px;
     cursor: pointer;
-  }
+} */
 
 
 /* event */
 
-.event {
+/* .event {
     text-align: center;
 }
 
@@ -488,12 +563,12 @@ h3 {
 .event__list li:hover {
     transform: translateY(-8px);
     opacity: 0.9;
-}
+} */
 
 /* ticket */
-
+/*
 .ticket {
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .live__list {
@@ -543,14 +618,14 @@ h3 {
 
 .ticket__btn:hover {
     background-color: plum;
-}
+} */
 
 /* sns */
 
 .sns-icons {
-    display: flex;       
-    gap: 45px;            
-    justify-content: center;  
+    display: flex;
+    gap: 45px;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -559,42 +634,78 @@ h3 {
     max-width: 300px;
     margin: 0 auto;
 }
-  
+
 .sns-icons img {
-    width: 40px;          
-    height: 40px;         
-    border-radius: 50%;   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     object-fit: cover;
     transition: opacity 0.3s ease;
 }
-  
+
 .sns-icons img:hover {
-    opacity: 0.7;         /* ホバー時のエフェクト */
+    opacity: 0.7;
 }
-  
 
 /* footer */
 
 footer {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 20px 30px;
     border-top: 1px solid #555;
 }
 
-/* footer button {
-    background: #fff;
-    color: #000;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
+.footer-line {
     margin-top: 20px;
-    font-weight: bold;
-    cursor: pointer;
-} */
+}
+
+.footer-company {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.footer-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 220px;
+    padding: 14px 30px;
+
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
 
 /* タブレット */
 
 @media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .pc-title {
+        display: none;
+    }
+
+    .sp-logo {
+        display: block;
+        width: 120px;
+        height: auto;
+    }
 
     .calendar {
         max-width: 90%;
@@ -626,13 +737,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-    
+
     h1 {
-        margin-bottom: 10px;
+        margin-bottom: 0;
         font-size: 3rem;
-    }
-    .concept_text p {
-        font-size: 1.5rem;
+        background-color: #fff;
     }
 
     .profile-photos-left p {
