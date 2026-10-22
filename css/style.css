@@ -744,6 +744,16 @@ footer {
         background-color: #fff;
     }
 
+    .pc-title {
+        display: none;
+    }
+
+    .sp-logo {
+        display: block;
+        width: 120px;
+        height: auto;
+    }
+
     .profile-photos-left p {
         font-size: 0.9rem;
     }
